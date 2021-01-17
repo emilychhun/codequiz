@@ -1,0 +1,283 @@
+*, *::before, *::after 
+{
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+}
+  
+  :root {
+    --primary: #0a0808c5;
+    --secondary: #8207a1;
+    --tertiary: rgb(211, 56, 144);
+    --white: rgb(255, 255, 255);
+   --font-size: 62.5%; 
+   --hue-neutral: 200;
+   
+  }
+
+  body {
+    background: #ededed;
+    color: var(--secondary);
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+  
+  /* Header */
+  header {
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      width: 100%;
+      background-color: burlywood;
+     
+  }
+  #your-scores {
+    font-size: 2.0rem;
+    color: rgb(38, 0, 255);
+    display: inline;
+    text-align: right;
+    padding-left: 50px;
+}
+
+
+
+  #your-scores:hover {
+      cursor: pointer;
+      color: red;
+    
+  }
+
+  header h4 {
+      padding-left: 20px;
+      font-size: 2.0rem;
+      display: inline;
+  }
+  
+ .timer {
+      font-size: 2.0rem;
+      color: blueviolet;
+      display: inline;
+      text-align: right;
+      padding-right: 50px;
+  }
+
+  /*main */
+.box {
+      padding: 20px;
+      flex-direction: column;
+      width: 50%;
+      margin: auto;
+      --hue: var(--hue-neutral);
+      background-color: hsl(var(--hue), 100%, 20%);
+      margin-top: 50px;
+  }
+  #body-question{
+      margin-top: 50px;
+      font-size: 1.0rem;
+      margin-bottom: 20px;
+
+    }
+   
+  
+ h1 {
+    color: var(--primary);
+    font-size: 3.0rem;
+    font-weight: bold;
+  }
+
+  p {
+    color: var(--primary);
+    font-size: 3.0rem;  
+        
+    }
+    
+  
+
+  .first {
+    align-items: center;
+    text-align: center;
+    }
+  
+ .first h1, .start p {
+     text-align: center;
+ }
+
+  .test {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 20px;
+    margin: auto;
+  }
+
+
+  .last h1, .end p {
+      text-align: center
+  }
+
+  .last input {
+    outline: thick; 
+    border-width: 1px;
+    padding: 5px;
+    width: 35%;
+    font-size: 2.2rem;
+    border-radius: 5px;
+  }
+
+  .last input:focus {
+    border: 2px solid var(--secondary);
+  }
+
+  .show {
+      display: flex;
+  }
+
+  .hide {
+      display: none;
+  }
+
+  #test {
+    color: var(--primary);
+    text-align: center;
+    font-size: 2.0rem;
+    font-weight: bold;
+  }
+
+  #text1{
+    text-align: center;
+    color: red;
+  }
+  .high-score {
+      text-align: center;
+  }
+  #initials-form{
+    text-align: center;
+  }
+#Sorry{
+    color: red;
+}
+
+#Right{
+    color:rgb(38, 0, 255);
+}
+  /*Button  */
+  .btn {
+      background: var(--secondary);
+      color: var(--white);
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0 3px grey;
+    
+       }
+  
+
+
+
+
+  .btn:hover {
+      background: var(--tertiary);
+      border-radius: 10px;
+      box-shadow: 0 2px grey;
+      cursor: pointer;
+  }
+
+  .btn:active {
+      border: none;
+      outline: none;
+      box-shadow: 0 0 grey;
+  }
+
+  .btn:focus {
+      outline: none;
+  }
+
+  .btn-grid {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-gap: 0px;
+      margin: 20px;
+     
+  }
+
+ .startend {
+     width: 25%;
+     margin-top: 10px;
+ }
+
+ .answerbtn {
+     width: 50%;
+
+     font-size: 1.0vw;
+     margin-top: 20px;
+     margin-left: 15px;
+     margin-right: 300px;
+    
+ }
+
+ /* correct/wrong styling */
+
+ .banner {
+     font-size: 25px;
+     text-align: center;
+     color: rgba(199, 187, 187, 0.8);
+     font-style: italic;
+     margin: 0px 100px;
+ }
+
+.banner h2 {
+    border-top: 2px solid rgba(199, 187, 187, 0.8);
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+/* List for High Scores */
+ 
+ ol {
+    list-style-type: number;
+
+ }
+
+ li:nth-child(odd) {
+     background-color: rgba(228, 151, 164, 0.5);
+     width: 100%;
+    
+ }
+
+
+li {
+    font-size: 1.5vw;
+    color: white;
+}
+
+/* media query for smaller screens */
+
+@media screen and (max-width: 1024px) {
+
+    .btn {
+        width: 100%;
+        font-size: 3.0vw;
+      
+        
+    }
+
+    #test {
+        font-size: 1vw;
+    }
+
+    h1 {
+        font-size: 1.5vw;
+    }
+
+    p {
+        font-size: 1vw;
+
+
+          }
+        
+    
+
+
+

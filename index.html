@@ -1,0 +1,71 @@
+
+  
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Code Quiz</title>
+        <link rel="stylesheet" href="./assets/style.css">
+    </head>
+
+    <body> 
+
+        <header>
+            <h4 id="your-scores">View Your Scores</h4> 
+            <h4 class="timer">Time: <span id="timer"></span></h4>
+        </header>
+
+        <div id="container1" class="show">
+            <div class="box first">
+                <h1>Coding Quiz Challenge</h1>  
+               <p>Welcome to JavaScript quiz.  There are 6 questions.  
+                  Each correct answer will receive 5 points. 
+                  However, each incorrect answer will reduce 1 point and your time by 3 seconds.</p>
+                <button class="btn startend" id="startquiz">Start Quiz</button>
+            </div>    
+        </div>
+
+        <div id="body-question" class="hide">
+            <div class="box test">
+                <div id="test"></div>
+                <div id="answer-buttons" class="btn-grid"></div>
+            </div>
+        </div>
+
+        <div id="container2" class="hide">
+           <div class="box last">
+            <div id=score>
+                <h1 id="text1">End the Quiz!</h1>
+            </div>  
+            <form id="initials-form" class="initials">
+              <h4> Enter Your Initials:
+                <input type="text" name="initials" id="initials" class="text-input" />
+                <button class="btn startend" type="submit">Enter</button> </h4>
+              </form>
+            </div>
+        </div>
+
+        <div id="container3" class="hide">
+          <div class="high-scores box">
+            <h1 class="high-score">Your Scores</h1>
+            <ol id="high-score-list" class="score-list"></ol>
+        <div>
+            <button class="btn" id="restart">Restart</button>
+            <button class="btn" id="clear-high-scores">Reset Your scores</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="hide" id="Right">
+        <h2>Right :)!</h2>
+    </div>
+    <div class="hide" id="Sorry">
+        <h2>Sorry, try again :( </h2>
+    </div>
+
+    <script src="./assets/script.js"></script> 
+</body>
+</html>
+
